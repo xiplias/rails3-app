@@ -22,7 +22,7 @@ A rails 3 application template which provides the gems I think are the best of b
 How to use
 ----------
 
-    rails my_app -J -T -m  http://github.com/mcolyer/rails3-app/raw/master/app.rb
+    rails new my_app -J -T -m  http://github.com/mcolyer/rails3-app/raw/master/app.rb
     cd my_app
     gem install bundler
     bundle install
