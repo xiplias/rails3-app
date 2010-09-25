@@ -5,10 +5,15 @@ RVMRC
 
 create_file ".rvmrc", rvmrc
 
+gem "rspec-rails", ">= 2.0.0.beta.22", :group => :test
 gem "factory_girl_rails", ">= 1.0.0", :group => :test
+gem "capybara", ">= 0.3.9", :group => :test
+gem "steak", ">= 0.3.8", :group => :test
 gem "factory_girl_generator", ">= 0.0.1", :group => [:test, :development]
-gem "haml-rails", ">= 0.0.2"
-gem "rspec-rails", ">= 2.0.0.beta.12", :group => :test
+gem "haml-rails", ">= 0.2"
+gem "compass", ">= 0.10.5"
+gem "compass-susy-plugin", ">= 0.8.1"
+gem "devise", ">= 1.1.3"
 
 generators = <<-GENERATORS
 
@@ -21,7 +26,7 @@ GENERATORS
 application generators
 
 get "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js",  "public/javascripts/jquery.js"
-get "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "public/javascripts/jquery-ui.js"
+get "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js", "public/javascripts/jquery-ui.js"
 get "http://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
 
 gsub_file 'config/application.rb', 'config.action_view.javascript_expansions[:defaults] = %w()', 'config.action_view.javascript_expansions[:defaults] = %w(jquery.js jquery-ui.js rails.js)'
