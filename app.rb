@@ -8,7 +8,7 @@ create_file ".rvmrc", rvmrc
 gem "rspec-rails", ">= 2.0.0.beta.22", :group => :test
 gem "factory_girl_rails", ">= 1.0.0", :group => :test
 gem "capybara", ">= 0.3.9", :group => :test
-gem "steak", ">= 0.3.8", :group => :test
+gem "steak", ">= 0.4.0.a5", :group => :test
 gem "factory_girl_generator", ">= 0.0.1", :group => [:test, :development]
 gem "haml-rails", ">= 0.2"
 gem "compass", ">= 0.10.5"
