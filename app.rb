@@ -58,9 +58,9 @@ Run the following commands to complete the setup of #{app_name.humanize}:
 
 % cd #{app_name}
 % bundle install
-% script/rails generate rspec:install
-% script/rails generate devise:install
-% script/rails generate devise MODEL
+% rails generate rspec:install
+% rails generate devise:install
+% rails generate devise MODEL
 DOCS
 
 log docs
