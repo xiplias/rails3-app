@@ -1,18 +1,32 @@
-Rails 3, RSpec, Factory Girl, Haml, and jQuery
-==============================================
+A rails 3 application template which provides the gems I think are the best of breed.
 
-Easily generate a Rails 3 RC application with RSpec, Factory Girl, Haml, and
-jQuery in one line:
+** Authentication **
 
-    % rails new my_app -J -T -m \
-    http://github.com/leshill/rails3-app/raw/master/app.rb
+* devise
 
-## Need Cucumber?
+** Testing **
 
-Use this generator file instead:
+* rspec2
+* capybara
+* steak
+* factory_girl
 
-    % rails new my_app -J -T -m \
-    http://github.com/leshill/rails3-app/raw/master/cuke.rb
+** Frontend **
+
+* haml
+* sass
+* compass
+* compass-susy
+* jquery
+
+How to use
+----------
+
+    rails my_app -J -T -m  http://github.com/mcolyer/rails3-app/raw/master/app.rb
+    cd my_app
+    gem install bundler
+    bundle install
+    script/rails generate rspec:install
 
 rvm
 ---
@@ -48,10 +62,5 @@ Note on Patches/Pull Requests
 -----------------------------
 
 * Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don’t break it in a future version
-  unintentionally.
-* Commit, do not mess with rakefile, version, or history.  (if you want to have
-  your own version, that is fine but bump version in a commit by itself I can
-  ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+* Make your feature addition or bug fix in a branch.
+* Send me a pull request.
