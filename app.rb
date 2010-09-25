@@ -57,10 +57,10 @@ docs = <<-DOCS
 Run the following commands to complete the setup of #{app_name.humanize}:
 
 % cd #{app_name}
-% gem install bundler --pre
 % bundle install
 % script/rails generate rspec:install
-
+% script/rails generate devise:install
+% script/rails generate devise MODEL
 DOCS
 
 log docs
